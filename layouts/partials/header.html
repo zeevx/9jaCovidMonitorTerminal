@@ -1,0 +1,41 @@
+<header class="header">
+    <div class="header__inner">
+        <div class="header__logo">
+            {{ partial "logo.html" . }}
+        </div>
+        <div class="menu-trigger">&#128567</div>
+    </div>
+    {{ if len $.Site.Menus }} {{ partial "menu.html" . }} {{ end }}
+</header>
+<p class="type-text" title="In times like this we can only help one another;Coded by *Adams Paul* \nMonitor Covid19's activities in Nigeria Live; Stay Safe , I Love You!;">:)</p>
+<div class="post on-list">
+    <h1 class="post-title">
+        # Nigeria Live Stats(@ 7:35 pm 26th March)
+    </h1>
+    <div>
+        <font style="font-size: 30px;">&#129395 <b>3</b> Dischared Cases</font>
+    </div>
+    <div>
+        <font style="font-size: 30px;">&#129397 <b>14</b> New Cases Today</font>
+    </div>
+    <div>
+        <font style="font-size: 30px;">&#129298 <b>65</b> Confirmed(Total)</font>
+    </div>
+    <div>
+        <font style="font-size: 30px;">&#128546 <b>1</b> Death</font>
+    </div>
+
+</div>
+<div class="post on-list">
+    <h1 class="post-title">
+        # Affected Areas
+    </h1>
+    <div class="post-cover container" id="map"></div>
+</div>
+<div class="post on-list">
+    <h1 class="post-title">
+        # NCDC Trends
+    </h1>
+    <a class="twitter-timeline" href="https://twitter.com/NCDCgov?ref_src=twsrc%5Etfw">Tweets by NCDCgov Powered by Zeevx</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
