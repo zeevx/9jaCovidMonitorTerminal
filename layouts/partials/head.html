@@ -6,7 +6,8 @@
 <link rel="canonical" href="{{ .Permalink }}" />
 
 {{ template "_internal/google_analytics.html" . }}
-
+<script src="https://kit.fontawesome.com/0138981e41.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!-- Theme CSS -->
 <link rel="stylesheet" href="{{ "assets/style.css" | absURL }}">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -14,6 +15,9 @@
   crossorigin=""/>
   <style>
 #map { height:100%; }
+.fa {
+    color: #78e2a1 !important;
+}
     .teletype-prefix, .teletype-cursor { color: #00bd9c; }
     </style>
 {{ if (ne $.Site.Params.ThemeColor "orange") }}
