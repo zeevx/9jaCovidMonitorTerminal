@@ -1,4 +1,4 @@
-baseurl = "https://9jacovid.netlify.com/"
+baseurl = "https://9jacovidmonitor.ga/"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
@@ -12,8 +12,8 @@ paginate = 5
 
 [languages]
   [languages.en]
-    title = "9jaCovidMonitorTerminal"
-    subtitle = "A simple, terminal for monitoring covid19 activities i Nigeria."
+    title = "9jaCovidMonitor"
+    subtitle = "A simple, terminal for monitoring covid19 activities in Nigeria."
     keywords = "9jaCovidMonitorTerminal,9ja,Covid,Monitor,Terminal"
     copyright = ""
     menuMore = "Show more"
@@ -21,7 +21,7 @@ paginate = 5
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "9jaCovidMonitorTerminal"
+      logoText = "9jaCovidMonitor"
       logoHomeLink = "/"
 
     # [languages.en.menu]
@@ -33,3 +33,7 @@ paginate = 5
     #     identifier = "showcase"
     #     name = "Showcase"
     #     url = "/showcase"
+    #  [[languages.en.menu.main]]
+    #     identifier = "video"
+    #     name = "Video"
+    #     url = "/video"

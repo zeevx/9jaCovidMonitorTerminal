@@ -19,6 +19,11 @@
     color: #78e2a1 !important;
 }
     .teletype-prefix, .teletype-cursor { color: #00bd9c; }
+a.deco-none:hover {
+    color:#78e2a1 !important;
+    text-decoration:none;
+
+}
     </style>
 {{ if (ne $.Site.Params.ThemeColor "orange") }}
   <link rel="stylesheet" href="{{ (printf "assets/%s.css" $.Site.Params.ThemeColor) | absURL }}">

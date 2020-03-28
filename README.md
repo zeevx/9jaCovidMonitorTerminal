@@ -2,7 +2,7 @@
 
 A simple, terminal for monitoring covid19 activities in Nigeria using a terminal like UI/UX.
 
-Demo: [https://9jacovid.netlify.com](https://9jacovid.netlify.com)
+Demo: [https://9jacovidmonitor.ga](https://9jacovidmonitor.ga)
 APIs: Will be Updated soon.
 Stack: GO Lang(Hugo).
 

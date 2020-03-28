@@ -1,4 +1,77 @@
+
 {{ define "main" }}
+
+<div class="post on-list">
+    <h1 class="post-title">
+        # Menu
+    </h1>
+
+<div class="row">
+
+<div class="col-6">
+<div class="m-2" style="border:20px solid #78e2a0;border:10px solid var(--accent);background:transparent;margin:10px 0;padding:20px">
+<a class="deco-none" href="{{ "video" | absURL }}">
+<font class="d-flex justify-content-center" style="font-size:50px;">
+<i class="fas fa-video"></i>
+</font>
+<div class="text-center">
+<b>Live Videos</b>
+</div>
+</a>
+</div>
+</div>
+
+<div class="col-6">
+<div class="m-2" style="border:20px solid #78e2a0;border:10px solid var(--accent);background:transparent;margin:10px 0;padding:20px">
+<a class="deco-none" href="{{ "stats" | absURL }}">
+<font class="d-flex justify-content-center" style="font-size:50px;">
+<i class="fas fa-chart-bar"></i>
+</font>
+<div class="text-center">
+<b>Live Stats</b>
+</div>
+</a>
+</div>
+</div>
+
+<div class="col-6">
+<div class="m-2" style="border:20px solid #78e2a0;border:10px solid var(--accent);background:transparent;margin:10px 0;padding:20px">
+<a class="deco-none" href="{{ "map" | absURL }}">
+<font class="d-flex justify-content-center" style="font-size:50px;">
+<i class="fas fa-map"></i>
+</font>
+<div class="text-center">
+<b>Live Heat Map</b>
+</div>
+</a>
+</div>
+</div>
+
+<div class="col-6">
+<div class="m-2" style="border:20px solid #78e2a0;border:10px solid var(--accent);background:transparent;margin:10px 0;padding:20px">
+<a class="deco-none" href="{{ "trends" | absURL }}">
+<font class="d-flex justify-content-center" style="font-size:50px;">
+<i class="fab fa-twitter"></i>
+</font>
+<div class="text-center">
+<b>Live Tweets</b>
+</div>
+</a>
+</div>
+</div>
+
+
+</div>
+<br>
+<div>
+<font style="font-size: 20px;">
+<b>
+“Corona virus is not a cult, perception or religion to discuss if it is real or not.
+People who don’t believe that Corona Virus is real. Are inconveniencing and endangering the lives of others. They become the carriers of the virus and spreading it everywhere. For your own sake. Stay at HOME.”
+― De philosopher DJ Kyos
+</b>
+</font>
+</div>
 <div class="posts">
 
   {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
