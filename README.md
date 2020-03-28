@@ -15,5 +15,5 @@ A simple, terminal for monitoring covid19 activities in Nigeria using a terminal
 
 ### Author
 
-Name: Adams Paul Ohiani
-University: University of Ibadan
+- Name: Adams Paul Ohiani
+- University: University of Ibadan
