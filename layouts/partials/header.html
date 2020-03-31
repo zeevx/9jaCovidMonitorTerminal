@@ -8,23 +8,36 @@
     {{ if len $.Site.Menus }} {{ partial "menu.html" . }} {{ end }}
 </header>
 <p class="type-text" title="In times like this we can only help one another;Coded by *Adams Paul* \nMonitor Covid19's activities in Nigeria Live; Stay Safe , I Love You!;">:)</p>
-<div class="">
-    <h1 class="post-title">
-        # Nigeria Live Stats(@ 7:35 pm 26th March)
-    </h1>
-    <div>
-        <font style="font-size: 20px;">&#129395 No of Dischared Cases: <b>3</b></font>
-    </div>
-    <div>
-        <font style="font-size: 20px;">&#129397 No of New Cases Today: <b>14</b></font>
-    </div>
-    <div>
-        <font style="font-size: 20px;">&#129298 No of Confirmed Cases: <b>65</b></font>
-    </div>
-    <div>
-        <font style="font-size: 20px;">&#128546 No of Death: <b>1</b></font>
-    </div>
-
-</div>
 
 
+<div id="output" class="post-box"></div>
+
+
+
+<script>
+    $.getJSON('https://corona.lmao.ninja/countries/Nigeria', function(data) {
+
+        var output = document.getElementById('output');
+        output.innerHTML = `
+        <div class="">
+            <h1 class="post-title">
+                # Nigeria Live Stats
+            </h1>
+            <div>
+                <font style="font-size: 20px;">&#129395 No of Dischared Cases: <b>${data.recovered}</b></font>
+            </div>
+            <div>
+                <font style="font-size: 20px;">&#129397 No of New Cases Today: <b>${data.todayCases}</b></font>
+            </div>
+            <div>
+                <font style="font-size: 20px;">&#129298 No of Confirmed Cases: <b>${data.cases}</b></font>
+            </div>
+            <div>
+                <font style="font-size: 20px;">&#128546 No of Death: <b>${data.deaths}</b></font>
+            </div>
+        
+        </div>
+        `;
+
+    });
+</script>
