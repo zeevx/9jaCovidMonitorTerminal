@@ -9,7 +9,7 @@ author: "Adams Paul"
 <!-- HTML code -->
 <div class="post on-list">
    
-    <div class="post-cover container" id="map"></div>
+   <div class="post-cover container" id="map"></div>
 
 </div>
 
