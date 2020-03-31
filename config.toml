@@ -2,7 +2,7 @@ baseurl = "https://9jacovidmonitor.ga"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
-
+defaultMarkdownHandler = "goldmark"
  [markup.goldmark]
     [markup.goldmark.extensions]
       definitionList = true
